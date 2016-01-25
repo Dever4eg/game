@@ -1,0 +1,6 @@
+{
+  "require": {
+    "raulfraile/ladybug": "1.0.*",
+    "phpunit/php-timer": "~1.0"
+  }
+}

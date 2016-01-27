@@ -4,7 +4,7 @@
 namespace Game\Controllers;
 
 
-use App\Classes\Mvc\Controller;
+use Game\Classes\Mvc\Controller;
 
 class Main extends Controller
 {

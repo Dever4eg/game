@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\Mvc;
+namespace Game\Classes\Mvc;
 
 class Controller
 {

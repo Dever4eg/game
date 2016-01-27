@@ -7,12 +7,11 @@ namespace Game\Controllers;
 use Game\Classes\Mvc\Controller;
 use Game\Classes\Mvc\View;
 
-
-class Error extends Controller
+class Visitor extends Controller
 {
-    public function ActionE404()
+    public function ActionIndex()
     {
         $view = new View();
-        $view->display('Error/E404');
+        $view->display('visitor/index');
     }
 }

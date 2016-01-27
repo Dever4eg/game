@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Classes\Mvc;
+namespace Game\Classes\Mvc;
+
+use Game\Classes\http\E404Exception;
 
 class View
 {
@@ -23,16 +25,18 @@ class View
             $$key = $val;
         }
 
-
-
         ob_start();
-        include __DIR__ . '/../views/' . $template . '.php';
+
+        if( !file_exists(__DIR__ . '/../../views/' . $template . '.php') )
+            throw new E404Exception();
+        require __DIR__ . '/../../views/' . $template . '.php';
+
         $content = ob_get_clean();
 
         if( !empty($layout) )
         {
             ob_start();
-            include __DIR__ . '/../views/layouts/' . $layout;
+            require __DIR__ . '/../../Views/layouts/' . $layout;
             $content = ob_get_clean();
         }
 

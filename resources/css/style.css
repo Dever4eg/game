@@ -1,0 +1,379 @@
+*
+{											                           /*Применяется ко всему*/
+	margin: 0;                    
+	padding: 0;
+	outline: none;
+	font-family:calibri;
+	text-decoration: none;
+}
+
+
+ 
+body                                                                      /*Тело всей странички*/                                                      
+{   
+	margin-left: auto;
+	margin-right: auto;
+    max-width: 540px;
+	background: url(/resources/img/bg/bg.png) #9ea0a0;
+	background-attachment: fixed;
+}
+
+#game_area   																/*Сам сайт*/
+{
+	-moz-box-shadow:0 0 20px #4d4d4d;
+	-webkit-box-shadow:0 0 20px #4d4d4d;
+	box-shadow:0 0 20px #4d4d4d;
+	
+    margin-left: auto;
+	margin-right: auto;
+    width: device-width;
+    height: auto;
+	background: #c7c7c7;
+}
+
+#notification  																/*Блок оповещений сверху*/ 
+{
+	color: #c7c7c7;
+	background: #959595;
+}
+
+
+#header  																	/*Шапка сайта*/
+{
+	background: /*url(/resources/img/bg/head_bg.png)*/ #959595;
+}
+
+
+#content  																	/*Контент сайта*/   																
+{
+	
+}
+
+
+#footer 																	/*Подвал*/
+{
+	color: #c7c7c7;
+	background: #959595;
+	font-size: 18px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.notification_text  														/*Текст блока оповещений сверху*/
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.header_text   																	/*Текст шапки*/
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+	font-size: 13pt;
+	text-align: center;
+}
+
+
+.content_text  																	/*Текст контента*/
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.footer_text 																	/*Текст подвала*/
+{
+    margin-left: 20px;
+    margin-right: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+#notification_text a  															/*Ссылки  блока оповещений  сверху*/
+{
+	text-decoration: underline;
+	color: #efefef;
+}
+
+#header a  																		/*Ссылки шапки*/
+{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+#content a 																		/*Ссылки контента*/
+{
+	
+}
+
+
+#footer a     																	/*Ссылки подвала*/															
+{
+	text-decoration: underline;
+	color: #c7c7c7;
+}
+
+
+.panel 																			/*Панель*/
+{
+	background: #65793C;
+	border-radius: 5px;
+	padding: 10px 0;
+	color: #fff;
+}
+
+
+
+.span_img_head  																	/*Картинки появляющиеся в панели персонажа*/
+{
+	vertical-align: middle;
+}
+
+
+
+
+.button_medium  																	/*Кнопки стандартные для входа, регистрации*/
+{	
+	/*box-shadow:0 0 5px #919191;
+	-moz-box-shadow:0 0 5px #919191;
+	-webkit-box-shadow:0 0 5px #919191;*/
+
+	
+	font-size: 18px;
+    color: #fff;
+	text-decoration: none;
+	user-select: none;
+	background: #65793c;
+	padding: 14px 32px;
+	ine: none;
+    /*border: 1px solid #E3E3E3;*/
+    border-radius: 5px;
+}
+.button_medium:hover
+{
+	/*box-shadow:0 0 5px #919191;
+	-moz-box-shadow:0 0 5px #919191;
+	-webkit-box-shadow:0 0 5px #919191;*/
+	
+	color: #ffff0b;
+	background: #718b3c;
+}
+
+.button_big 																	/*Большие кнопки управления */
+{
+	/*box-shadow:0 0 5px #919191;
+	-moz-box-shadow:0 0 5px #919191;
+	-webkit-box-shadow:0 0 5px #919191;*/
+	
+	display: inline-block;
+	height: 64px;
+	text-align: center;
+	padding: 8px 0;
+	margin: 4px 3px;
+	width: 47%;
+	background: #65793c;
+	border-radius: 7px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12pt;
+}
+.button_big:hover  																
+{
+	/*box-shadow:0 0 5px #919191;
+	-moz-box-shadow:0 0 5px #919191;
+	-webkit-box-shadow:0 0 5px #919191;*/
+	
+	color: #ffff0b;
+	background: #718b3c;
+}
+
+
+
+
+
+input[type="submit"], input[type="button"] 										/*Кнопки не ссылки*/
+{
+   /* box-shadow:0 0 5px #919191;
+	-moz-box-shadow:0 0 5px #919191;
+	-webkit-box-shadow:0 0 5px #919191;*/
+   
+	border-radius: 5px;
+    color: #fff;
+	text-decoration: none;
+	user-select: none;
+	background: #65793c;
+	padding: 12px 30px;
+	ine: none;
+	border: none;
+	cursor: pointer;
+	font-size: 16pt;	
+}
+input[type="submit"]:hover, input[type="button"]:hover
+{
+	/*box-shadow:0 0 5px #919191;
+	-moz-box-shadow:0 0 5px #919191;
+	-webkit-box-shadow:0 0 5px #919191;*/
+	
+	color: #ffff0b;
+	background: #718b3c;
+}
+
+
+
+
+input[type="text"], input[type="password"] 	, input[type="e-mail"] 			/*Поле ввода, поле ввода пароля*/
+{
+    width: 80%;
+    padding: 4px 10px;
+    border: 1px solid #E3E3E3;
+    background: #959595; 
+    border-radius: 5px;
+	font-size: 16pt;
+}
+
+input[type="text"].captcha 														/*Поле ввода капчи*/
+{
+	width: 30%;
+    padding: 4px 10px;
+    border: 1px solid #E3E3E3;
+    background: #959595; 
+    border-radius: 5px;
+	font-size: 16pt;
+}
+
+
+
+
+
+
+.but_list_game																/*Кнопки у виде списков у базе знаний*/
+{
+	padding: 6px 10px;
+	list-style-type: none;
+	border: 1px solid #a2a2a2;	
+	font-size: 10,5pt;
+}
+.but_list_game:hover
+{
+	background: #b7b7b7;
+}
+	
+.know_base_a  																	/*Ссылки на кнопке на базе знаний*/			
+{
+	color: #346734; 	
+}
+
+
+
+
+
+
+
+
+.center  																			/*Обьект по центру*/
+{
+    text-align: center;
+}
+.left 																				/*Обьект по левому краю*/
+{
+	text-align: left;
+}
+.right
+{
+	text-align: right; 										 						/*Обьект по правому краю*/				
+}
+.justify
+{
+	text-align: justify; 															/*Выровнять текст по левому и правому краю*/
+}
+
+.MyTab 
+{
+	text-indent: 2em; 																/*Табуляция*/
+}
+
+.greasy_text
+{
+	font-weight: bold; 																/*Жирный текст*/
+}
+
+
+.shadow 																		/*Тень*/
+{
+	box-shadow:0 0 5px #000;
+	-moz-box-shadow:0 0 5px #000;
+	-webkit-box-shadow:0 0 5px #000;
+}
+
+.videlenie_text 	   															/*Виделение строки в зале славы*/															
+{
+	font-weight: bold;
+	color: #fff;
+	background: #65793C;
+	border-radius: 1px;
+	padding: 2px 0;
+	color: black;
+		
+}
+.videlenie_text:hover
+{
+	color: #ffff0b;
+	background: #718b3c;
+}
+
+
+
+
+
+.main_img 																			/*Большые картинки в контенте*/
+{
+    max-width: 540px;
+	width: 100%;
+	max-height: 360px;
+    text-align: center;
+}
+.main_img img 																	/*Картинка зоны логотип-ссылки (для адаптиции на мобильном устройстве)*/
+{
+	max-width: 100%;
+}
+
+
+
+
+.logo 																			/*Зона Логотип-ссылки на главную страницу*/
+{	
+    max-width: 540px;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background: #65793c;
+}
+.logo img 																		/*Картинка в зоне логотип-ссылки для адаптации под мобильное устройство*/
+{
+	max-width: 100%;
+}
+
+
+.rightpic
+{
+	float: left;
+	
+}
+
+
+
+
+
+

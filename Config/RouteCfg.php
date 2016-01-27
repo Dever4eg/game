@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'DefaultController' => 'Main',
+    'DefaultController' => 'Visitor',
     'DefaultAction' => 'Index',
 ];

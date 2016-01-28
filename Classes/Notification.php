@@ -4,6 +4,9 @@
 namespace Game\Classes;
 
 
+use Game\Classes\Session;
+
+
 
 class Notification
 {
@@ -12,36 +15,30 @@ class Notification
         return require __DIR__ . '/../Config/NotifCfg.php';
     }
 
-    static function Get()
+    public static function Get()
     {
-        session_start();
+        Session::start();
 
         if(!isset($_SESSION['notification'])) {
-            session_destroy();
+            Session::destroy();
             return false;
         }
 
         $arr = $_SESSION['notification'];
-        unset($_SESSION['notification']);
-        session_destroy();
+
+        Session::destroy();
 
         $str = '<img src="'. self::GetConfig()[$arr['type']] .'">' . $arr['message'];
 
         return $str;
     }
 
-    static function Set($message, $type = 'Message')
+    public static function Set($message, $type = 'Message')
     {
-        session_name('notification');
-        session_start();
+        Session::start();
 
-        if(!isset($_SESSION['notification']))
-            return false;
-
-        $arr = $_SESSION['notification'];
-
-        $arr['message'] .= $message;
-        $arr['type']    .= $type;
+        $arr['message'] = $message;
+        $arr['type']    = $type;
 
         $_SESSION['notification'] = $arr;
     }

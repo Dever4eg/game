@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes;
+namespace Game\Classes;
 
 use PDO;
 
@@ -12,7 +12,7 @@ class DB
 
     public function __construct()
     {
-        $this->dbh = new PDO('mysql:dbname=news;host=192.168.1.3', 'root', '');
+        $this->dbh = new PDO('mysql:dbname=db_the_craft;host=192.168.1.3', 'root', '');
     }
 
     public function SetClassName($className)

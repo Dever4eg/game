@@ -5,6 +5,9 @@
         <meta charset = "utf-8" >
         <meta name="viewport" content="width=device-width">
 		<link rel ="stylesheet" type="text/css" href="/resources/css/style.css" />
+
+		<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+
 	</head>
 	<body class = "" >
 		<div id = "game_area" >
@@ -38,6 +41,7 @@
 				<?php endif; ?>
 
 				<br>
+
 				<!--mesto.zp.ua-->
 				<a style="text-decoration: none;" href="http://mesto.zp.ua/">
 					<img src="http://ad.mesto.zp.ua/img.gif" border=0 width=88 height=31 alt="Регистрация доменов, хостинг">

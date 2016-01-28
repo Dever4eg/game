@@ -372,6 +372,13 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 	
 }
 
+.captcha
+{
+	margin: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
 
 
 

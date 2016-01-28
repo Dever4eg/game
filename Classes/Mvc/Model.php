@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Classes\Mvc;
+namespace Game\Classes\Mvc;
 
-use App\Classes\DB;
+use Game\Classes\DB;
 
 class Model
 {

@@ -9,6 +9,7 @@ class Model
     static protected $table;
 
     public $id;
+
     public static function FindAll()
     {
         $db = new DB();
@@ -31,7 +32,7 @@ class Model
 
         $res = $db->query($sql, $params);
 
-        if( empty($res) )
+        if (empty($res))
             return false;
 
         return $res[0];
@@ -40,24 +41,54 @@ class Model
     public static function FindByColumn($column, $value)
     {
         $db = new DB();
-        $db->SetClassName( get_called_class());
+        $db->SetClassName(get_called_class());
 
         $sql = 'SELECT * FROM ' . static::$table . ' WHERE ' . $column . '=:value';
         $params = [':value' => $value];
 
         $res = $db->query($sql, $params);
 
-        if( empty($res) )
+        if (empty($res))
             return false;
 
         return $res[0];
     }
 
+    public static function FindByCols($cols)
+    {
+        //['login' => 'test', 'password' => '123']
+
+        $db = new DB();
+        $db->SetClassName(get_called_class());
+
+        $vars = [];
+        $ins = [];
+
+        foreach ($cols as $k => $v) {
+            $vars[] = $k .'=:'. $k;
+            $ins[':'. $k] = $v;
+        }
+
+        //($vars);
+        //ldd($ins);
+
+
+        $sql = 'SELECT * FROM ' . static::$table . ' WHERE ' . implode(' AND ', $vars);
+
+        //ld($sql);
+        //ldd($ins);
+
+        $res = $db->query($sql, $ins);
+
+        if (empty($res))
+            return false;
+        return $res;
+    }
 
 
     public function Save()
     {
-        if(empty($this->id))
+        if (empty($this->id))
             $this->Insert();
         else
             $this->Update();
@@ -68,8 +99,8 @@ class Model
         $vars = get_object_vars($this);     //обычные ключи
         $ins = [];                          //ключи с добавлением :
 
-        foreach( $vars as $key => $val ) {
-            if ( !empty($vars[$key]) ) {
+        foreach ($vars as $key => $val) {
+            if (!empty($vars[$key])) {
                 $ins[':' . $key] = $val;
             } else {
                 unset($vars[$key]);
@@ -95,8 +126,7 @@ class Model
         $cols = [];                         //масив строк вида 'id=:id' для подстановки в sql
         $data = [];                         //масив параметров для pdo вида ':id'=>'9'
 
-        foreach($vars as $key => $val)
-        {
+        foreach ($vars as $key => $val) {
             $data[':' . $key] = $val;
 
             if ($key == 'id')
@@ -118,7 +148,7 @@ class Model
 
     public function delete()
     {
-        if(empty($this->id))
+        if (empty($this->id))
             return false;
 
         $sql = 'DELETE FROM ' . static::$table . ' WHERE id=:id';

@@ -15,4 +15,5 @@ class User extends Model
     public $password;
     public $email = null;
     public $date;
+
 }

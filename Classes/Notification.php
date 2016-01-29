@@ -7,7 +7,6 @@ namespace Game\Classes;
 use Game\Classes\Session;
 
 
-
 class Notification
 {
     protected static function GetConfig()
@@ -28,7 +27,7 @@ class Notification
 
         Session::destroy();
 
-        $str = '<img src="'. self::GetConfig()[$arr['type']] .'">' . $arr['message'];
+        $str = '<p><img src="'. self::GetConfig()[$arr['type']] .'">' . $arr['message'] .'</p>';
 
         return $str;
     }

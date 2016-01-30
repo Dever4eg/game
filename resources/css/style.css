@@ -41,6 +41,7 @@ body                                                                      /*Те
 #header  																	/*Шапка сайта*/
 {
 	background: /*url(/resources/img/bg/head_bg.png)*/ #959595;
+	text-align: center;
 }
 
 

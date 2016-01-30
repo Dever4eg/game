@@ -27,7 +27,7 @@ use Game\Classes\Auth;
         <div class="logo"><a title="Главная" href="/"> <img src="/resources/img/name_img.png" alt="The craft"/> </a>
         </div>
 
-        <?php if (isset($StatsShow) && Auth::IsAuth()): ?>
+        <?php if (!empty($stats)): ?>
             <div class="stats">
                 <?php include_once __DIR__ . '/../Components/Stats.php'; ?>
             </div>

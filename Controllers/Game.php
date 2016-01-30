@@ -11,21 +11,26 @@ use Game\Classes\Auth;
 
 class Game extends Controller
 {
+    public $view;
+
     public function __construct()
     {
         if (!Auth::IsAuth()) {
             header('location: /visitor/login');
             die;
         }
+
+        $this->view = new View();
+        $this->view->StatsShow = true;
+        $this->view->login = Auth::GetLogin();
     }
 
-	public function ActionIndex()
-	{
-        $view = new View();
-        $view->notification = Notification::Get();
+    public function ActionIndex()
+    {
+        $this->view->notification = Notification::Get();
 
-        $view->display('Game/index');
-	}
+        $this->view->display('Game/index');
+    }
 
     public function ActionLogout()
     {

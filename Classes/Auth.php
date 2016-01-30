@@ -18,6 +18,11 @@ class Auth
 
     static public function Logout()
     {
-        setcookie('auth', '', time()-60*60*24*4, '/');   //На 4 суток
+        setcookie('auth', '', time()-60*60*24*4, '/');
+    }
+
+    static public function GetLogin()
+    {
+        return $_COOKIE['auth'];
     }
 }

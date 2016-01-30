@@ -1,3 +1,6 @@
+<?php
+	use Game\Classes\Auth;
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,12 +21,17 @@
 				<?php endif; ?>
 				<br />
 			</div>
+
 			<div id = "header" >
                 <div class = "logo"><a title = "Главная" href="/"> <img src="/resources/img/name_img.png" alt = "The craft" /> </a></div>
-                <?php if(!empty($header)) echo '<div class = "header_text" > '. $header .' </div>'; ?>
-                
-                
+
+				<?php if(isset($StatsShow) && Auth::IsAuth()): ?>
+					<div class="stats">
+						<?php include_once __DIR__ . '/../Components/Stats.php'; ?>
+					</div>
+				<?php endif; ?>
 			</div>
+
 			<div id = "content" >
                 <?php if(!empty($content)) echo $content; ?>
 			</div>
@@ -39,8 +47,6 @@
 						<?php echo $footer; ?>
 					</div>
 				<?php endif; ?>
-
-				<br>
 
 				<!--mesto.zp.ua-->
 				<a style="text-decoration: none;" href="http://mesto.zp.ua/">

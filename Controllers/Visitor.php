@@ -46,7 +46,7 @@ class Visitor extends Controller
                 $err = 'Введите пароль!';
             } elseif (false === User::FindByCols([
                         'login' => $login,
-                        'password' => md5(md5($password . 'craft')),
+                        'password' => sha1($password),
                     ]
                 )
             ) {
@@ -115,7 +115,7 @@ class Visitor extends Controller
                 $user = new User();
 
                 $user->login = $login;
-                $user->password = md5(md5($password . 'craft'));
+                $user->password = sha1($password);
                 $user->date = date('Y-m-d h:i:sa');
 
                 $user->save();

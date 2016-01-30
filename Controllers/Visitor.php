@@ -7,6 +7,7 @@ namespace Game\Controllers;
 use Game\Classes\Auth;
 use Game\Classes\Mvc\Controller;
 use Game\Classes\Mvc\View;
+use Game\Models\Stats;
 use Game\Models\User;
 use Game\Classes\Notification;
 use Game\Classes\Session;
@@ -77,60 +78,48 @@ class Visitor extends Controller
 
             $view->display('Visitor/register');
         } else {
-            $err = '';
+            $this->Register();
+        }
+    }
 
-            $login = $_POST['login'];
-            $password = $_POST['password'];
+    public function Register()
+    {
+        $login = $_POST['login'];
+        $password = $_POST['password'];
 
-            Session::start();
-            $captcha = $_SESSION['rand_code'];
-            Session_unset();
+        Session::start();
+        $captcha = $_SESSION['rand_code'];
+        unset($_SESSION['rand_code']);
 
-            if (empty($login)) {
-                $err = 'Введите логин!';
-            } elseif (empty($password)) {
-                $err = 'Введите пароль!';
-            } elseif (empty($_POST['password_to'])) {
-                $err = 'Введите пароль повторно!';
-            } elseif ($password != $_POST['password_to']) {
-                $err = 'Пароли не совпадают!';
-            } elseif (!preg_match('~^[-a-zA-Z0-9_]+$~', $login)) {
-                $err = 'Логин может состоять только из букв латинского алфавита и цифр,
-	       				а также "-","_"';
-            } elseif (!preg_match('~^[-a-zA-Z0-9_]+$~', $password)) {
-                $err = 'Пароль может состоять только из букв латинского алфавита и цифр,
-	       				а также "-","_"';
-            } elseif (strlen($login) < 3 or strlen($login) > 18) {
-                $err = 'Логин должен быть не меньше 3-х символов и не больше 18-ти';
-            } elseif (strlen($password) > 18) {
-                $err = 'Пароль должен быть не больше 18-ти символов';
-            } elseif (empty($_POST['captcha'])) {
-                $err = 'Введите проверочный код';
-            } elseif ($captcha != $_POST['captcha']) {
-                $err = 'Проверочный код введен неверно';
-            } elseif (false !== User::FindByColumn('login', $_POST['login'])) {
-                $err = 'Пользователь с таким логином уже существует';
-            }
-            if (empty($err)) {
-                $user = new User();
+        $err = User::Validate($login, $password, $_POST['password_to'], $captcha);
 
-                $user->login = $login;
-                $user->password = sha1($password);
-                $user->date = date('Y-m-d h:i:sa');
+        if (empty($err)) {
+            $user = new User();
 
-                $user->save();
+            $user->login = $login;
+            $user->password = sha1($password);
+            $user->date = date('Y-m-d h:i:sa');
 
-                Notification::Set($login . ' ,Вы зарегистрировались, можете войти на сайт', 'Accept');
+            $user->save();
 
-                header('location: /visitor/login');
-                die;
-            } else {
 
-                Notification::Set($err, 'Error');
+            $stats = new Stats();
 
-                header('location: /visitor/register');
-                die;
-            }
+            $stats->userId = $user->id;
+            $stats->level = 1;
+            $stats->energy = 1200;
+            $stats->health = 120;
+            $stats->credits = 0;
+            $stats->lapis = 0;
+            $stats->emerald = 0;
+
+            $stats->Save();
+
+            Notification::Set($login . ', Вы зарегистрировались, можете войти на сайт', 'Accept');
+            header('location: /visitor/login'); die;
+        } else {
+            Notification::Set($err, 'Error');
+            header('location: /visitor/register');die;
         }
     }
 }

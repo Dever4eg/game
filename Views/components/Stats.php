@@ -74,14 +74,4 @@
             </span>
         </a>
     </span>
-    <span>
-        <a href="/game/stock">
-            <span class="span_img_head">
-                &nbsp;<img src="/resources/img/header_img/stock.png">
-            </span>
-            <span class="span_text_head">
-                <?php ?>
-            </span>
-        </a>
-    </span>
 </p>

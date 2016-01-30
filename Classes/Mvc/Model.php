@@ -99,8 +99,10 @@ class Model
         $vars = get_object_vars($this);     //обычные ключи
         $ins = [];                          //ключи с добавлением :
 
+        //ld($vars);
+
         foreach ($vars as $key => $val) {
-            if (!empty($vars[$key])) {
+            if (null !== ($vars[$key])) {
                 $ins[':' . $key] = $val;
             } else {
                 unset($vars[$key]);
@@ -114,9 +116,12 @@ class Model
             (' . implode(', ', array_keys($ins)) . ')
         ';
 
+        //ld($sql);
+        //ld($ins);
+
         $db = new DB();
         $db->execute($sql, $ins);
-        $this->id = $db->lastInsertId();
+        $this->id = $db->lastInsertId() + 0;
     }
 
     protected function Update()

@@ -25,6 +25,11 @@ class Other extends Controller
     public function ActionKnowBase()
     {
         $view = new View();
-        $view->Display('Other/knowBase');
+
+        if(!empty($_GET['article'])) {
+            $view->Display('Other/KnowBase/'. $_GET['article']);
+        } else {
+            $view->Display('Other/knowBase/index');
+        }
     }
 }

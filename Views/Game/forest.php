@@ -7,7 +7,7 @@
 		</div>
 		<br>
 	</a>
-	<div class = "main_img" > <img class = "shadow" src = "/resourses/img/trees/spruce.png" alt = "main_img" > </div><br>
+	<div class = "main_img" > <img class = "shadow" src = "/resources/img/trees/spruce.png" alt = "main_img" > </div><br>
 	<div class="center">
 		<form action = "forest" method="post">
 			<p><input  name="beat" type="submit" value="Войти в лес"></p>		

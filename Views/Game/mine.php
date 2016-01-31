@@ -4,13 +4,13 @@
 		<h3 class = "center" >Шахта</h3>
 	</div>
 	<br>
-	<div class = "main_img " > <img class = "shadow "  src = "/resourses/img/main_img/mine.png" alt = "main_img" > </div>
+	<div class = "main_img " > <img class = "shadow "  src = "/resources/img/main_img/mine.png" alt = "main_img" > </div>
 	<br>
 	<form class = "center" action = "mine" method="post">
 		<p><input  name="beat" type="submit" value="Построить шахту"></p>
 	</form><br>
 		<p>.............................................................................................................................</p>
-		<p> <class = " rightpic" > <img  src = "/resourses/img/lots/trolley.png" alt = "main_img"   class = "rightpic"  > 
+		<p> <class = " rightpic" > <img  src = "/resources/img/lots/trolley.png" alt = "main_img"   class = "rightpic"  >
 		Исследуйте  шахту, для этого вам нужно строить опоры, ставить рельсы и вешать факелы. Чем глубже копаете тем ценнее ресурсы.</p>
 		<br>
 		<p>Исследована глубина : 0 м из 132-х </p>

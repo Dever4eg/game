@@ -20,7 +20,7 @@
                 &nbsp;<img src="/resources/img/header_img/level.png">
             </span>
             <span class="span_text_head">
-                <?php ?>
+                <?php echo $stats->level; ?>
             </span>
         </a>
     </span>
@@ -30,7 +30,7 @@
                 &nbsp;<img src="/resources/img/header_img/energy.png">
             </span>
             <span class="span_text_head">
-                <?php ?>
+                <?php echo $stats->energy; ?>
             </span>
         </a>
     </span>
@@ -40,7 +40,7 @@
                 &nbsp;<img src="/resources/img/header_img/heart.png">
             </span>
             <span class="span_text_head">
-                <?php ?>
+                <?php echo $stats->health; ?>
             </span>
         </a>
     </span>
@@ -50,7 +50,7 @@
                 &nbsp;<img src="/resources/img/header_img/credit.png">
             </span>
             <span class="span_text_head">
-                <?php ?>
+                <?php echo $stats->credits; ?>
             </span>
         </a>
     </span>
@@ -60,7 +60,7 @@
                 &nbsp;<img src="/resources/img/header_img/lapis.png">
             </span>
             <span class="span_text_head">
-                <?php ?>
+                <?php echo $stats->lapis; ?>
             </span>
         </a>
     </span>
@@ -70,7 +70,7 @@
                 &nbsp;<img src="/resources/img/header_img/emerald.png">
             </span>
             <span class="span_text_head">
-                <?php ?>
+                <?php echo $stats->emerald; ?>
             </span>
         </a>
     </span>

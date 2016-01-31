@@ -7,14 +7,14 @@
 	<a class = "know_base_a" href = "know_base/basic">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/fence.png">&nbsp;Огород</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/fence.png">&nbsp;Огород</p>
 			</li>
 		</ul>		
 	</a>
 	<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Загон</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Загон</p>
 			</li>
 		</ul>	
 	</a>

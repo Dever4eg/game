@@ -1,6 +1,6 @@
 <div class="content_text justify">
     <br>
-    <h3 class="center"><a class="know_base_a" href="/know_base">База знаний</a>->Основные знания</h3>
+    <h3 class="center"><a class="know_base_a" href="/Other/KnowBase">База знаний</a>->Основные знания</h3>
     <br>
     <p> 1. Всегда на виду твое имя, уровень, энергия, здоровье, кредиты. Осознай это.
         (Верхние иконки сразу под логотипом)</p>

@@ -7,14 +7,14 @@
 	<a class = "know_base_a" href = "know_base/basic">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/clan.png">&nbsp;Информация</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/clan.png">&nbsp;Информация</p>
 			</li>
 		</ul>		
 	</a>
 	<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Пожертвование</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Пожертвование</p>
 			</li>
 		</ul>	
 	</a>
@@ -22,7 +22,7 @@
 				<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Улучшения</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Улучшения</p>
 			</li>
 		</ul>	
 	</a>
@@ -30,7 +30,7 @@
 			<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Производство</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Производство</p>
 			</li>
 		</ul>	
 	</a>
@@ -38,7 +38,7 @@
 			<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Рудники сокровищ</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Рудники сокровищ</p>
 			</li>
 		</ul>	
 	</a>
@@ -46,7 +46,7 @@
 			<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Битвы</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Битвы</p>
 			</li>
 		</ul>	
 	</a>
@@ -54,7 +54,7 @@
 					<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Союзы</p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Союзы</p>
 			</li>
 		</ul>	
 	</a>
@@ -62,7 +62,7 @@
 					<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Битвы союзников </p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Битвы союзников </p>
 			</li>
 		</ul>	
 	</a>
@@ -71,7 +71,7 @@
 			<a class = know_base_a href = "know_base/skills">
 		<ul>
 			<li class = "but_list_game" >
-				<p class = "greasy_text"><img src="/resourses/img/home_icon/paw.png">&nbsp;Состав </p>	
+				<p class = "greasy_text"><img src="/resources/img/home_icon/paw.png">&nbsp;Состав </p>
 			</li>
 		</ul>	
 	</a>		

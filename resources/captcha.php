@@ -6,7 +6,7 @@ $string = "";
 for ($i = 0; $i < 6; $i++)
 	$string .= chr(rand(97, 122));
 
-$string = 'wwwwww';
+//$string = 'wwwwww';
 
 //Session::start();
 session_start();

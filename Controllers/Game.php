@@ -7,6 +7,7 @@ use Game\Classes\Mvc\Controller;
 use Game\Classes\Mvc\View;
 use Game\Classes\Notification;
 use Game\Classes\Auth;
+use Game\Models\State;
 use Game\Models\Stats;
 use Game\Models\User;
 
@@ -27,15 +28,35 @@ class Game extends Controller
 
         $this->view->notification = Notification::Get();
 
-        $user = User::FindByColumn('login', Auth::GetLogin());
-        if ($user === false) {
+
+        $stats = Stats::FindByColumn('login', Auth::GetLogin());
+        if ($stats === false) {
             Auth::Logout();
-            header('location: /visitor/login');
-            die;
+            header('location: /visitor/login');die;
         }
 
-        $this->view->login = $user->login;
-        $this->view->stats = Stats::FindByColumn('userId', $user->id);
+
+        $this->view->stats = $stats;
+
+        /*
+        $state = State::FindByColumn('login',  Auth::GetLogin());
+        if($state->state == 'beginner') {
+            $this->ActionBeginner();
+        }
+        */
+    }
+
+    public function ActionBeginner()
+    {
+        $login = Auth::GetLogin();
+        $state = State::FindByColumn('login', $login);
+
+        if($state->state == 'game') {
+            header('location: /game'); die;
+        }
+
+        $this->view->display('Game/beginner/meta_'. $state->meta);
+        die;
     }
 
     public function ActionIndex()

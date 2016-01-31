@@ -1,6 +1,6 @@
 *
 {											                           /*Применяется ко всему*/
-	margin: 0;                    
+	margin: 0;
 	padding: 0;
 	outline: none;
 	font-family:calibri;
@@ -8,9 +8,9 @@
 }
 
 
- 
-body                                                                      /*Тело всей странички*/                                                      
-{   
+
+body                                                                      /*Тело всей странички*/
+{
 	margin-left: auto;
 	margin-right: auto;
     max-width: 540px;
@@ -23,7 +23,7 @@ body                                                                      /*Те
 	-moz-box-shadow:0 0 20px #4d4d4d;
 	-webkit-box-shadow:0 0 20px #4d4d4d;
 	box-shadow:0 0 20px #4d4d4d;
-	
+
     margin-left: auto;
 	margin-right: auto;
     width: device-width;
@@ -31,7 +31,7 @@ body                                                                      /*Те
 	background: #c7c7c7;
 }
 
-#notification  																/*Блок оповещений сверху*/ 
+#notification  																/*Блок оповещений сверху*/
 {
 	color: #c7c7c7;
 	background: #959595;
@@ -45,9 +45,9 @@ body                                                                      /*Те
 }
 
 
-#content  																	/*Контент сайта*/   																
+#content  																	/*Контент сайта*/
 {
-	
+
 }
 
 
@@ -83,6 +83,7 @@ body                                                                      /*Те
 
 .content_text  																	/*Текст контента*/
 {
+    padding-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -115,11 +116,11 @@ body                                                                      /*Те
 
 #content a 																		/*Ссылки контента*/
 {
-	
+
 }
 
 
-#footer a     																	/*Ссылки подвала*/															
+#footer a     																	/*Ссылки подвала*/
 {
 	text-decoration: underline;
 	color: #c7c7c7;
@@ -145,12 +146,12 @@ body                                                                      /*Те
 
 
 .button_medium  																	/*Кнопки стандартные для входа, регистрации*/
-{	
+{
 	/*box-shadow:0 0 5px #919191;
 	-moz-box-shadow:0 0 5px #919191;
 	-webkit-box-shadow:0 0 5px #919191;*/
 
-	
+
 	font-size: 18px;
     color: #fff;
 	text-decoration: none;
@@ -166,7 +167,7 @@ body                                                                      /*Те
 	/*box-shadow:0 0 5px #919191;
 	-moz-box-shadow:0 0 5px #919191;
 	-webkit-box-shadow:0 0 5px #919191;*/
-	
+
 	color: #ffff0b;
 	background: #718b3c;
 }
@@ -176,7 +177,7 @@ body                                                                      /*Те
 	/*box-shadow:0 0 5px #919191;
 	-moz-box-shadow:0 0 5px #919191;
 	-webkit-box-shadow:0 0 5px #919191;*/
-	
+
 	display: inline-block;
 	height: 64px;
 	text-align: center;
@@ -190,12 +191,12 @@ body                                                                      /*Те
 	font-weight: bold;
 	font-size: 12pt;
 }
-.button_big:hover  																
+.button_big:hover
 {
 	/*box-shadow:0 0 5px #919191;
 	-moz-box-shadow:0 0 5px #919191;
 	-webkit-box-shadow:0 0 5px #919191;*/
-	
+
 	color: #ffff0b;
 	background: #718b3c;
 }
@@ -209,7 +210,7 @@ input[type="submit"], input[type="button"] 										/*Кнопки не ссы�
    /* box-shadow:0 0 5px #919191;
 	-moz-box-shadow:0 0 5px #919191;
 	-webkit-box-shadow:0 0 5px #919191;*/
-   
+
 	border-radius: 5px;
     color: #fff;
 	text-decoration: none;
@@ -219,14 +220,14 @@ input[type="submit"], input[type="button"] 										/*Кнопки не ссы�
 	ine: none;
 	border: none;
 	cursor: pointer;
-	font-size: 16pt;	
+	font-size: 16pt;
 }
 input[type="submit"]:hover, input[type="button"]:hover
 {
 	/*box-shadow:0 0 5px #919191;
 	-moz-box-shadow:0 0 5px #919191;
 	-webkit-box-shadow:0 0 5px #919191;*/
-	
+
 	color: #ffff0b;
 	background: #718b3c;
 }
@@ -239,7 +240,7 @@ input[type="text"], input[type="password"] 	, input[type="e-mail"] 			/*Поле
     width: 80%;
     padding: 4px 10px;
     border: 1px solid #E3E3E3;
-    background: #959595; 
+    background: #959595;
     border-radius: 5px;
 	font-size: 16pt;
 }
@@ -249,7 +250,7 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 	width: 30%;
     padding: 4px 10px;
     border: 1px solid #E3E3E3;
-    background: #959595; 
+    background: #959595;
     border-radius: 5px;
 	font-size: 16pt;
 }
@@ -263,17 +264,17 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 {
 	padding: 6px 10px;
 	list-style-type: none;
-	border: 1px solid #a2a2a2;	
+	border: 1px solid #a2a2a2;
 	font-size: 10,5pt;
 }
 .but_list_game:hover
 {
 	background: #b7b7b7;
 }
-	
-.know_base_a  																	/*Ссылки на кнопке на базе знаний*/			
+
+.know_base_a  																	/*Ссылки на кнопке на базе знаний*/
 {
-	color: #346734; 	
+	color: #346734;
 }
 
 
@@ -293,14 +294,14 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 }
 .right
 {
-	text-align: right; 										 						/*Обьект по правому краю*/				
+	text-align: right; 										 						/*Обьект по правому краю*/
 }
 .justify
 {
 	text-align: justify; 															/*Выровнять текст по левому и правому краю*/
 }
 
-.MyTab 
+.MyTab
 {
 	text-indent: 2em; 																/*Табуляция*/
 }
@@ -318,7 +319,7 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 	-webkit-box-shadow:0 0 5px #000;
 }
 
-.videlenie_text 	   															/*Виделение строки в зале славы*/															
+.videlenie_text 	   															/*Виделение строки в зале славы*/
 {
 	font-weight: bold;
 	color: #fff;
@@ -326,7 +327,7 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 	border-radius: 1px;
 	padding: 2px 0;
 	color: black;
-		
+
 }
 .videlenie_text:hover
 {
@@ -354,7 +355,7 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 
 
 .logo 																			/*Зона Логотип-ссылки на главную страницу*/
-{	
+{
     max-width: 540px;
 	width: 100%;
 	height: 40px;
@@ -370,7 +371,7 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 .rightpic
 {
 	float: left;
-	
+
 }
 
 .captcha
@@ -381,10 +382,20 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 }
 
 
-.stats
+.stats, #header a
 {
 	padding: 3px;
+	color: #333;
 }
 
+#header .logout
+{
+    color: #e6d60d;
+    padding-left: 0;
+    padding-right: 0;
+}
 
-
+.after
+{
+    padding-right: 10px;
+}

@@ -11,6 +11,7 @@ use Game\Models\Stats;
 use Game\Models\User;
 use Game\Classes\Notification;
 use Game\Classes\Session;
+use Game\Models\State;
 
 class Visitor extends Controller
 {
@@ -95,31 +96,34 @@ class Visitor extends Controller
 
         if (empty($err)) {
             $user = new User();
-
             $user->login = $login;
             $user->password = sha1($password);
             $user->date = date('Y-m-d h:i:sa');
-
             $user->save();
 
-
             $stats = new Stats();
-
-            $stats->userId = $user->id;
+            $stats->login = $user->login;
             $stats->level = 1;
             $stats->energy = 1200;
             $stats->health = 120;
             $stats->credits = 0;
             $stats->lapis = 0;
             $stats->emerald = 0;
-
             $stats->Save();
+
+            $state = new State();
+            $state->login = $user->login;
+            $state->state = 'beginner';
+            $state->meta = 1;
+            $state->save();
+
+
 
             Notification::Set($login . ', Вы зарегистрировались, можете войти на сайт', 'Accept');
             header('location: /visitor/login'); die;
         } else {
             Notification::Set($err, 'Error');
-            header('location: /visitor/register');die;
+            header('location: /visitor/register'); die;
         }
     }
 }

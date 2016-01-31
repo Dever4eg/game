@@ -1,4 +1,4 @@
-
+﻿
 
 <br/>
 <div class = "main_img center" > <img class = "shadow" src = "/resources/img/main_img/headband_game.png" alt = "main_img" > </div>
@@ -11,10 +11,10 @@
 			<img src="/resources/img/home_icon/events.png" alt="События"> <br> События </a>
 		<a class = "button_big" href="/game/hall_of_fame"> 
 			<img src="/resources/img/home_icon/hall_of_fame.png" alt="Зал славы"> <br> Зал славы </a>
-		<a class = "button_big" href="/game/fight"> 
-			<img src="/resources/img/home_icon/fight1.png" alt="Бой"> <br> Бой </a>
 		<a class = "button_big" href="/game/hunter"> 
 			<img src="/resources/img/home_icon/hunter.png" alt="Охота"> <br> Охота </a>
+		<a class = "button_big" href="/game/fight"> 
+			<img src="/resources/img/home_icon/fight1.png" alt="Бой"> <br> Бой </a>
 		<a class = "button_big" href="/game/forest"> 
 			<img src="/resources/img/home_icon/forest.png" alt="Лес"> <br> Лес </a>
 		<a class = "button_big" href="/game/mine"> 

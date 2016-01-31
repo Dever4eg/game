@@ -5,14 +5,14 @@
                 <img src="/resources/img/header_img/steave.png">
             </span>
             <span class="span_text_head">
-                <?php echo $login ?>
+                <?php echo $stats->login ?>
             </span>
         </a>
     </span>
-    <span>
-        (<a href="/game/logout">
+    <span >
+        <a class="logout" href="/game/logout">
             выйти
-        </a>)
+        </a>
     </span>
     <span>
         <a href="/game">

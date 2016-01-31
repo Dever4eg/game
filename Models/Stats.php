@@ -10,7 +10,7 @@ class Stats extends Model
 {
     static protected $table = 'stats';
 
-    public $userId;
+    public $login;
     public $level;
     public $energy;
     public $health;

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Game\Classes;
+namespace Dever4eg\Classes;
 
 
-use Game\Classes\Session;
+use Dever4eg\Classes\Session;
 
 
 class Notification

@@ -1,15 +1,15 @@
 <?php
 
 
-namespace Game\Controllers;
+namespace Dever4eg\Controllers;
 
-use Game\Classes\Mvc\Controller;
-use Game\Classes\Mvc\View;
-use Game\Classes\Notification;
-use Game\Classes\Auth;
-use Game\Models\State;
-use Game\Models\Stats;
-use Game\Models\User;
+use Dever4eg\Classes\Mvc\Controller;
+use Dever4eg\Classes\Mvc\View;
+use Dever4eg\Classes\Notification;
+use Dever4eg\Classes\Auth;
+use Dever4eg\Models\State;
+use Dever4eg\Models\Stats;
+use Dever4eg\Models\User;
 
 
 class Game extends Controller

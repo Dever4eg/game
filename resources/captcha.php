@@ -1,6 +1,6 @@
 <?php
 
-//use Game\Classes\Session;
+//use Dever4eg\Classes\Session;
 
 $string = "";
 for ($i = 0; $i < 6; $i++)

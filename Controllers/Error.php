@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Game\Controllers;
+namespace Dever4eg\Controllers;
 
 
-use Game\Classes\Mvc\Controller;
-use Game\Classes\Mvc\View;
+use Dever4eg\Classes\Mvc\Controller;
+use Dever4eg\Classes\Mvc\View;
 
 
 class Error extends Controller

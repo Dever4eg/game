@@ -1,8 +1,8 @@
 <?php
 
-namespace Game\Classes\Mvc;
+namespace Dever4eg\Classes\Mvc;
 
-use Game\Classes\http\E404Exception;
+use Dever4eg\Classes\http\E404Exception;
 
 class View
 {

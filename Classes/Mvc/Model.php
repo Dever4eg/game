@@ -1,8 +1,8 @@
 <?php
 
-namespace Game\Classes\Mvc;
+namespace Dever4eg\Classes\Mvc;
 
-use Game\Classes\DB;
+use Dever4eg\Classes\DB;
 
 class Model
 {

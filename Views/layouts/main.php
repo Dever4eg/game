@@ -1,5 +1,5 @@
 <?php
-use Game\Classes\Auth;
+use Dever4eg\Classes\Auth;
 
 ?>
 <!DOCTYPE html>

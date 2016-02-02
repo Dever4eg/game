@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Game\Models;
+namespace Dever4eg\Models;
 
 
-use Game\Classes\Mvc\Model;
+use Dever4eg\Classes\Mvc\Model;
 
 class State extends Model
 {

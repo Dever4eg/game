@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Game\Classes;
+namespace Dever4eg\Classes;
 
-use Game\Classes\Mvc\Router;
+use Dever4eg\Classes\Mvc\Router;
 
 class App
 {

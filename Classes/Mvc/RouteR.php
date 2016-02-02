@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Game\Classes\Mvc;
+namespace Dever4eg\Classes\Mvc;
 
-use Game\Classes\BException;
-use Game\Controllers\Error;
-use Game\Classes\http\E404Exception;
+use Dever4eg\Classes\BException;
+use Dever4eg\Controllers\Error;
+use Dever4eg\Classes\http\E404Exception;
 
 class Router
 {
@@ -25,8 +25,8 @@ class Router
 
                 //Если шузествует контроллер ошибок и метод ошибки 404,
                 //вызываем иначе просто выведем сообщение
-                if( class_exists('Game\Controllers\Error') &&
-                    method_exists('Game\Controllers\Error', 'ActionE404') )
+                if( class_exists('Dever4eg\Controllers\Error') &&
+                    method_exists('Dever4eg\Controllers\Error', 'ActionE404') )
                 {
                     $ctrl = new Error();
                     $ctrl->ActionE404();
@@ -57,7 +57,7 @@ class Router
         //ld($ctrl);
         //ld($Action);
 
-        $ctrlName = 'Game\\Controllers\\' . $ctrl;
+        $ctrlName = 'Dever4eg\\Controllers\\' . $ctrl;
         $methodName = 'Action' . $Action;
 
 

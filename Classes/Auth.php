@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Game\Classes;
+namespace Dever4eg\Classes;
 
 
 class Auth

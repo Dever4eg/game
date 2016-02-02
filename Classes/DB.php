@@ -1,6 +1,6 @@
 <?php
 
-namespace Game\Classes;
+namespace Dever4eg\Classes;
 
 use PDO;
 

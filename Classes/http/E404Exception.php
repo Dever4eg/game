@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Game\Classes\http;
+namespace Dever4eg\Classes\http;
 
-use Game\Classes\BException;
+use Dever4eg\Classes\BException;
 
 class E404Exception extends BException
 {

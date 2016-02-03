@@ -8,8 +8,6 @@
 	
 
 	<div class = "center">
-		<form action = "meta_6" method="post">
-			<input name="next" type="submit" value="Выложить печь">
-		</form><br>
+		<a class="button_medium" href="/beginner/next">Выложить печь</a>
 	</div>
 </div>

@@ -9,8 +9,6 @@
 
 
 	<div class = "center">
-		<form action = "meta_2" method="post">
-			<input name="next" type="submit" value="Осмотреться">
-		</form><br>
+		<a class="button_medium" href="/beginner/next">Осмотреться</a>
 	</div>
 </div>

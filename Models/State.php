@@ -13,4 +13,18 @@ class State extends Model
     public $login;
     public $state;
     public $meta;
+
+    public function Next()
+    {
+        // 7 количество страничек beginner
+        if ($this->meta < 7) {
+            $this->meta += 1;
+            $this->Save();
+        } elseif ($this->meta >= 7) {
+            $this->meta = 0;
+            $this->state = 'gamer';
+            $this->Save();
+
+        }
+    }
 }

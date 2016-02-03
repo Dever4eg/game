@@ -4,10 +4,9 @@
 	<p>  Возьми 3 камня и 1 палку. Сделай первый топор... Ну вот и готовый топор, иди в лес наруби брёвен...  </p><br />
 	
 	<br>
-	
 
 
-	<form action = "meta_4" method="post">
-		<input name="next" type="submit" value="Рубить">
-	</form><br>
+	<div class = "center">
+		<a class="button_medium" href="/beginner/next">Рубить</a>
+	</div>
 </div>

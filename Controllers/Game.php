@@ -20,14 +20,11 @@ class Game extends Controller
     {
         //если не авторизован перенаврабляем на страницу авторизации
         if (!Auth::IsAuth()) {
-            header('location: /visitor/login');
-            die;
+            header('location: /visitor/login');die;
         }
 
         $this->view = new View();
-
         $this->view->notification = Notification::Get();
-
 
         $stats = Stats::FindByColumn('login', Auth::GetLogin());
         if ($stats === false) {
@@ -38,25 +35,11 @@ class Game extends Controller
 
         $this->view->stats = $stats;
 
-        /*
+
         $state = State::FindByColumn('login',  Auth::GetLogin());
         if($state->state == 'beginner') {
-            $this->ActionBeginner();
+            header('location: /beginner');die;
         }
-        */
-    }
-
-    public function ActionBeginner()
-    {
-        $login = Auth::GetLogin();
-        $state = State::FindByColumn('login', $login);
-
-        if($state->state == 'game') {
-            header('location: /game'); die;
-        }
-
-        $this->view->display('Game/beginner/meta_'. $state->meta);
-        die;
     }
 
     public function ActionIndex()

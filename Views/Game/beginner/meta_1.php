@@ -13,8 +13,6 @@
 	<br />
 
 	<div class = "center">
-		<form action = "/game/beginner" method="post">
-			<input name="next" type="submit" value="Идти">
-		</form><br>
+		<a class="button_medium" href="/beginner/next">Идти</a>
 	</div>
 </div>

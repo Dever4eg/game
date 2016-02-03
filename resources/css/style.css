@@ -88,6 +88,11 @@ body                                                                      /*Те
     margin-right: 20px;
 }
 
+.content_text p
+{
+    /*padding-bottom: 10px;*/
+}
+
 
 
 .footer_text 																	/*Текст подвала*/
@@ -151,7 +156,7 @@ body                                                                      /*Те
 	-moz-box-shadow:0 0 5px #919191;
 	-webkit-box-shadow:0 0 5px #919191;*/
 
-
+	display: inline-block;
 	font-size: 18px;
     color: #fff;
 	text-decoration: none;
@@ -398,4 +403,36 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 .after
 {
     padding-right: 10px;
+}
+
+.characteristic
+{
+    width: 20px;
+}
+
+
+table.table
+{
+	width: 60%;
+	text-align: center;
+	margin: auto;
+}
+
+table.table th{
+	background: rgba(26, 119, 22, 0.25);
+	border: 1px #939393 solid;
+	height: 15px;
+    padding: 10px;
+    width: auto;
+
+}
+table.table td{
+	border: 1px #939393 solid;
+	height: 15px;
+    padding: 10px;
+    width: auto;
+}
+
+table.table.col-1{
+    width: 10%;
 }

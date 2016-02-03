@@ -59,7 +59,7 @@ use Dever4eg\Classes\Auth;
         <!--/mesto.zp.ua-->
 
         <br/>
-        <div class="center"> 2015 &copy; Все права защищены</div>
+        <div class="center"> <?php echo date('Y'); ?> &copy; Все права защищены</div>
         <br/>
     </div>
 </div>

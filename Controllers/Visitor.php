@@ -89,10 +89,10 @@ class Visitor extends Controller
         $password = $_POST['password'];
 
         Session::start();
-        //$captcha = $_SESSION['rand_code'];
+        $captcha = $_SESSION['rand_code'];
         unset($_SESSION['rand_code']);
 
-        //$err = User::Validate($login, $password, $_POST['password_to'], $captcha);
+        $err = User::Validate($login, $password, $_POST['password_to'], $captcha);
 
         if (empty($err)) {
             $user = new User();

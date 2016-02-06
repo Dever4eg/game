@@ -1,6 +1,6 @@
 <div class="content_text">
    	<br>
-   	<h3 class="center"><a class="know_base_a" href="/Other/KnowBase">База знаний</a>->Основные знания</h3>
+   	<h3 class="center"><a class="know_base_a" href="/KnowBase">База знаний</a>->Основные знания</h3>
    	<br>
    	<p> 1. Всегда на виду твое имя <img src="/resources/img/header_img/steave.png" alt="">,
        уровень <img src="/resources/img/header_img/level.png" alt="">

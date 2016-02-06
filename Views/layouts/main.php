@@ -40,9 +40,9 @@ use Dever4eg\Classes\Auth;
     <div id="footer">
         <br>
         <div class="center">
-            <a href="/other/aboutGame"> Об игре </a>&nbsp;
-            <a href="/other/regulations"> Правила </a>&nbsp;
-            <a href="/other/knowBase"> База знаний </a>&nbsp;
+            <a href="/Pages/aboutGame"> Об игре </a>&nbsp;
+            <a href="/Pages/regulations"> Правила </a>&nbsp;
+            <a href="/KnowBase"> База знаний </a>&nbsp;
         </div>
         <br>
 

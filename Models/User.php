@@ -16,6 +16,12 @@ class User extends Model
     public $email = null;
     public $date;
 
+
+    public function __construct()
+    {
+        $this->date = date('Y-m-d h:i:sa');
+    }
+
     public static function Validate($login, $password, $password_to, $captcha)
     {
         $err = '';
@@ -24,9 +30,9 @@ class User extends Model
             $err = 'Введите логин!';
         } elseif (empty($password)) {
             $err = 'Введите пароль!';
-        } elseif (empty($_POST['password_to'])) {
+        } elseif (empty($password_to)) {
             $err = 'Введите пароль повторно!';
-        } elseif ($password != $_POST['password_to']) {
+        } elseif ($password != $password_to) {
             $err = 'Пароли не совпадают!';
         } elseif (!preg_match('~^[-a-zA-Z0-9_]+$~', $login)) {
             $err = 'Логин может состоять только из букв латинского алфавита и цифр,

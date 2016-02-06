@@ -26,7 +26,6 @@ body                                                                      /*Те
 
     margin-left: auto;
 	margin-right: auto;
-    width: device-width;
     height: auto;
 	background: #c7c7c7;
 }
@@ -47,7 +46,7 @@ body                                                                      /*Те
 
 #content  																	/*Контент сайта*/
 {
-
+	padding: 20px;
 }
 
 
@@ -81,29 +80,13 @@ body                                                                      /*Те
 }
 
 
-.content_text  																	/*Текст контента*/
-{
-    padding-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.content_text p
-{
-    /*padding-bottom: 10px;*/
-}
-
-
 
 .footer_text 																	/*Текст подвала*/
 {
-    margin-left: 20px;
-    margin-right: 20px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 
 #notification_text a  															/*Ссылки  блока оповещений  сверху*/
@@ -141,6 +124,13 @@ body                                                                      /*Те
 }
 
 
+.stock																			/*Панель*/
+{
+	background: #5A5A5A;
+	border-radius: 5px;
+	padding: 3px 0;
+	color: #fff;
+}
 
 .span_img_head  																	/*Картинки появляющиеся в панели персонажа*/
 {
@@ -164,6 +154,9 @@ body                                                                      /*Те
 	background: #65793c;
 	padding: 14px 32px;
 	ine: none;
+
+	margin: 5px;
+
     /*border: 1px solid #E3E3E3;*/
     border-radius: 5px;
 }
@@ -270,7 +263,6 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 	padding: 6px 10px;
 	list-style-type: none;
 	border: 1px solid #a2a2a2;
-	font-size: 10,5pt;
 }
 .but_list_game:hover
 {
@@ -413,7 +405,11 @@ input[type="text"].captcha 														/*Поле ввода капчи*/
 
 table.table
 {
-	width: 60%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid #888;
+
+	width: 90%;
 	text-align: center;
 	margin: auto;
 }
@@ -422,17 +418,31 @@ table.table th{
 	background: rgba(26, 119, 22, 0.25);
 	border: 1px #939393 solid;
 	height: 15px;
-    padding: 10px;
-    width: auto;
-
+    padding: 5px 10px;
 }
 table.table td{
-	border: 1px #939393 solid;
+	border: 1px #aaa solid;
 	height: 15px;
-    padding: 10px;
-    width: auto;
+    padding: 0px 10px;
 }
 
-table.table.col-1{
-    width: 10%;
+.button_list
+{
+	display: block;
+	padding: 6px 10px;
+	list-style-type: none;
+	border: 1px solid #a2a2a2;
+	color: #346734;
+}
+.button_list:hover
+{
+	background: #b7b7b7;
+}
+
+.res
+{
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
 }

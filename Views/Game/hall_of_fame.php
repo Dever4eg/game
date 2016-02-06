@@ -1,4 +1,4 @@
-<div class = "content_text"> 
+
 	<a class="but_reload" href="/game/hall_of_fame" >
 	<br>  
 	<div class = "panel">
@@ -48,4 +48,3 @@
 	<p>3.</p>
 	 
 	<br>
-</div>

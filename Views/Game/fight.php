@@ -1,4 +1,4 @@
-<div class = "content_text"> 
+
 	<a class="but_reload" href="/game/fight" >
 		<br>
 		<div class = "panel">
@@ -14,4 +14,3 @@
 			<p><input  name="beat" type="submit" value="Бить"></p>    
 		</form><br>
 	</div>
-</div>

@@ -1,4 +1,4 @@
-<div class = "content_text">
+
 	<a class="but_reload" href="/game/farmer" >
 	<br><div class = "panel">
 		<h3 class = "center" >Ферма</h3>
@@ -30,4 +30,3 @@
 		</ul>
 	</a>
 	<br>
-</div>

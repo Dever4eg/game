@@ -7,8 +7,11 @@ use Dever4eg\Classes\Mvc\Controller;
 use Dever4eg\Classes\Mvc\View;
 use Dever4eg\Classes\Notification;
 use Dever4eg\Classes\Auth;
+use Dever4eg\Classes\Session;
+use Dever4eg\Models\Forest;
 use Dever4eg\Models\State;
 use Dever4eg\Models\Stats;
+use Dever4eg\Models\Stock;
 use Dever4eg\Models\User;
 
 
@@ -20,7 +23,8 @@ class Game extends Controller
     {
         //если не авторизован перенаврабляем на страницу авторизации
         if (!Auth::IsAuth()) {
-            header('location: /visitor/login');die;
+            header('location: /visitor/login');
+            die;
         }
 
         $this->view = new View();
@@ -29,16 +33,21 @@ class Game extends Controller
         $stats = Stats::FindByColumn('login', Auth::GetLogin());
         if ($stats === false) {
             Auth::Logout();
-            header('location: /visitor/login');die;
+            header('location: /visitor/login');
+            die;
         }
 
 
         $this->view->stats = $stats;
 
 
-        $state = State::FindByColumn('login',  Auth::GetLogin());
-        if($state->state == 'beginner') {
-            header('location: /beginner');die;
+        $state = State::FindByColumn('login', Auth::GetLogin());
+
+        //баг не работает logout !!!
+
+        if ($state->state == 'beginner') {
+            header('location: /beginner');
+            die;
         }
     }
 
@@ -74,6 +83,37 @@ class Game extends Controller
 
     public function ActionForest()
     {
+        $forest = Forest::FindByColumn('login', Auth::GetLogin());
+
+        if (!isset($_GET['act'])) {
+        } elseif($_GET['act'] == 'find') {
+            $forest->height = rand(5, 16);
+            $forest->state = 'find';
+            $forest->found = true;
+            $forest->save();
+
+            header('location: /game/forest');
+        } elseif ($_GET['act'] == 'chop') {
+            if ($forest->height != 1) {
+                $forest->height -= 1;
+                $forest->state = 'chopping';
+                $forest->save();
+
+                //Увеличеваем дерево на складе на 1
+                $stock = Stock::FindByColumn('login', Auth::GetLogin());
+                $stock->wood += 1;
+                $stock->save();
+                header('location: /game/forest');
+            } else {
+                $forest->height = null;
+                $forest->state = 'find';
+                $forest->found = false;
+                $forest->save();
+                header('location: /game/forest');
+            }
+        }
+
+        $this->view->forest = $forest;
         $this->view->display('Game/forest');
     }
 
@@ -109,6 +149,9 @@ class Game extends Controller
 
     public function ActionStock()
     {
+        $stock = Stock::FindByColumn('login', Auth::GetLogin());
+
+        $this->view->stock = $stock;
         $this->view->display('Game/stock');
     }
 
@@ -127,6 +170,11 @@ class Game extends Controller
         $this->view->display('Game/village');
     }
 
+
+    public function ActionUser()
+    {
+        $this->view->display('Game/user');
+    }
 
     public function ActionLogout()
     {

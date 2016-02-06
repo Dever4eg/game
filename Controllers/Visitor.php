@@ -7,7 +7,9 @@ namespace Dever4eg\Controllers;
 use Dever4eg\Classes\Auth;
 use Dever4eg\Classes\Mvc\Controller;
 use Dever4eg\Classes\Mvc\View;
+use Dever4eg\Models\Forest;
 use Dever4eg\Models\Stats;
+use Dever4eg\Models\Stock;
 use Dever4eg\Models\User;
 use Dever4eg\Classes\Notification;
 use Dever4eg\Classes\Session;
@@ -89,35 +91,35 @@ class Visitor extends Controller
         $password = $_POST['password'];
 
         Session::start();
-        $captcha = $_SESSION['rand_code'];
+
+        //$captcha = $_SESSION['rand_code'];
+        $captcha = $_POST['captcha'];
+
         unset($_SESSION['rand_code']);
 
         $err = User::Validate($login, $password, $_POST['password_to'], $captcha);
 
         if (empty($err)) {
-            $user = new User();
+            $user = new User($login, $password);
             $user->login = $login;
             $user->password = sha1($password);
-            $user->date = date('Y-m-d h:i:sa');
             $user->save();
 
             $stats = new Stats();
             $stats->login = $user->login;
-            $stats->level = 1;
-            $stats->energy = 1200;
-            $stats->health = 120;
-            $stats->credits = 0;
-            $stats->lapis = 0;
-            $stats->emerald = 0;
             $stats->Save();
 
             $state = new State();
             $state->login = $user->login;
-            $state->state = 'beginner';
-            $state->meta = 1;
             $state->save();
 
+            $forest = new Forest();
+            $forest->login = $user->login;
+            $forest->save();
 
+            $stock = new Stock();
+            $stock->login = $user->login;
+            $stock->save();
 
             Notification::Set($login . ', Вы зарегистрировались, можете войти на сайт', 'Accept');
             header('location: /visitor/login'); die;

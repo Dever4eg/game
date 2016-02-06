@@ -11,8 +11,8 @@ class State extends Model
     static protected $table = 'state';
 
     public $login;
-    public $state;
-    public $meta;
+    public $state = 'beginner';
+    public $meta = 1;
 
     public function Next()
     {

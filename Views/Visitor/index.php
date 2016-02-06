@@ -10,7 +10,7 @@
 <div class="content_text">
 
     <div class="center">
-        <a href="/visitor/login" class="button_medium"> Войти </a> <br/> <br/>
+        <a href="/visitor/login" class="button_medium"> Войти </a> <br/>
         <a href="/visitor/register" class="button_medium"> Регистрация </a> <br/> <br/>
     </div>
 

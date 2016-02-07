@@ -4,8 +4,11 @@ namespace Dever4eg\Classes;
 
 use PDO;
 
+
 class DB
 {
+    use Singleton;
+
     private $dbh;
 
     private $className = 'stdClass';

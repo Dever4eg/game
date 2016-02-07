@@ -14,19 +14,18 @@ use Dever4eg\Classes\Auth;
 
 </head>
 <body class="">
-<div id="game_area">
+<div id="wrap">
     <div id="notification">
-        <br/>
         <?php if (!empty($notification)): ?>
-            <div class="notification_text"> <?php echo $notification; ?> </div>
+            <?php echo $notification; ?>
         <?php endif; ?>
-        <br/>
+    </div>
+
+    <div class="logo">
+        <a title="Главная" href="/"> <img src="/resources/img/name_img.png" alt="The craft"/> </a>
     </div>
 
     <div id="header">
-        <div class="logo"><a title="Главная" href="/"> <img src="/resources/img/name_img.png" alt="The craft"/> </a>
-        </div>
-
         <?php if (!empty($stats)): ?>
             <div class="stats">
                 <?php include_once __DIR__ . '/../Components/Stats.php'; ?>

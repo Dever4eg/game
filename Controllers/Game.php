@@ -43,7 +43,7 @@ class Game extends Controller
 
         $state = State::FindByColumn('login', Auth::GetLogin());
 
-        //баг не работает logout !!!
+        //баг не работает logout если мы еще beginner !!!
 
         if ($state->state == 'beginner') {
             header('location: /beginner');
@@ -85,32 +85,13 @@ class Game extends Controller
     {
         $forest = Forest::FindByColumn('login', Auth::GetLogin());
 
-        if (!isset($_GET['act'])) {
-        } elseif($_GET['act'] == 'find') {
-            $forest->height = rand(5, 16);
-            $forest->state = 'find';
-            $forest->found = true;
-            $forest->save();
-
-            header('location: /game/forest');
-        } elseif ($_GET['act'] == 'chop') {
-            if ($forest->height != 1) {
-                $forest->height -= 1;
-                $forest->state = 'chopping';
-                $forest->save();
-
-                //Увеличеваем дерево на складе на 1
-                $stock = Stock::FindByColumn('login', Auth::GetLogin());
-                $stock->wood += 1;
-                $stock->save();
-                header('location: /game/forest');
-            } else {
-                $forest->height = null;
-                $forest->state = 'find';
-                $forest->found = false;
-                $forest->save();
-                header('location: /game/forest');
+        if (isset($_GET['act'])) {
+            if ($_GET['act'] == 'find') {
+                $forest->Search();
+            } elseif ($_GET['act'] == 'chop') {
+                $forest->Chop();
             }
+            header('location: /game/forest');
         }
 
         $this->view->forest = $forest;
@@ -169,7 +150,6 @@ class Game extends Controller
     {
         $this->view->display('Game/village');
     }
-
 
     public function ActionUser()
     {

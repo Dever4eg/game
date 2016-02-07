@@ -12,7 +12,7 @@ class Model
 
     public static function FindAll()
     {
-        $db = new DB();
+        $db = DB::instance();
 
         $class = get_called_class();
         $db->SetClassName($class);
@@ -23,7 +23,7 @@ class Model
 
     public static function FindOneByPk($id)
     {
-        $db = new DB();
+        $db = DB::instance();
         $db->SetClassName(get_called_class());
 
         $sql = 'SELECT * FROM ' . static::$table . ' WHERE id=:id';
@@ -40,7 +40,7 @@ class Model
 
     public static function FindByColumn($column, $value)
     {
-        $db = new DB();
+        $db = DB::instance();
         $db->SetClassName(get_called_class());
 
         $sql = 'SELECT * FROM ' . static::$table . ' WHERE ' . $column . '=:value';
@@ -58,7 +58,7 @@ class Model
     {
         //['login' => 'test', 'password' => '123']
 
-        $db = new DB();
+        $db = DB::instance();
         $db->SetClassName(get_called_class());
 
         $vars = [];
@@ -119,7 +119,7 @@ class Model
         //ld($sql);
         //ld($ins);
 
-        $db = new DB();
+        $db = DB::instance();
         $db->execute($sql, $ins);
         $this->id = $db->lastInsertId() + 0;
     }
@@ -147,7 +147,7 @@ class Model
         ';
 
 
-        $db = new DB();
+        $db = DB::instance();
         $db->execute($sql, $data);
     }
 
@@ -159,7 +159,7 @@ class Model
         $sql = 'DELETE FROM ' . static::$table . ' WHERE id=:id';
         $params = [':id' => $this->id];
 
-        $db = new DB();
+        $db = DB::instance();
         $db->execute($sql, $params);
     }
 }

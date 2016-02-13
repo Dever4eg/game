@@ -4,8 +4,8 @@
 namespace Dever4eg\App\Controllers;
 
 
-use Dever4eg\Framework\Mvc\Controller;
-use Dever4eg\Framework\Mvc\View;
+use Dever4eg\framework\Mvc\Controller;
+use Dever4eg\framework\Mvc\View;
 
 
 class Pages extends Controller

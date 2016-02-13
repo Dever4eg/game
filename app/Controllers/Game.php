@@ -3,11 +3,11 @@
 
 namespace Dever4eg\App\Controllers;
 
-use Dever4eg\Framework\Mvc\Controller;
-use Dever4eg\Framework\Mvc\View;
-use Dever4eg\Framework\Notification;
-use Dever4eg\Framework\Auth;
-use Dever4eg\Framework\Session;
+use Dever4eg\framework\Mvc\Controller;
+use Dever4eg\framework\Mvc\View;
+use Dever4eg\framework\Notification;
+use Dever4eg\framework\Auth;
+use Dever4eg\framework\Session;
 use Dever4eg\App\Models\Forest;
 use Dever4eg\App\Models\State;
 use Dever4eg\App\Models\Stats;

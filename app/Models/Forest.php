@@ -4,8 +4,8 @@
 namespace Dever4eg\App\Models;
 
 
-use Dever4eg\Framework\Mvc\Model;
-use Dever4eg\Framework\Auth;
+use Dever4eg\framework\Mvc\Model;
+use Dever4eg\framework\Auth;
 
 
 class Forest extends Model

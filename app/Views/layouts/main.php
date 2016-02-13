@@ -8,7 +8,7 @@ use Dever4eg\Classes\Auth;
     <title> The Craft </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="/resources/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
 
     <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
 
@@ -22,7 +22,7 @@ use Dever4eg\Classes\Auth;
     </div>
 
     <div class="logo">
-        <a title="Главная" href="/"> <img src="/resources/img/name_img.png" alt="The craft"/> </a>
+        <a title="Главная" href="/"> <img src="/img/name_img.png" alt="The craft"/> </a>
     </div>
 
     <div id="header">

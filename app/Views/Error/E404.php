@@ -1,4 +1,4 @@
-<div class="main_img"><img src="/resources/img/main_img/404.png" alt="404"></div>
+<div class="main_img"><img src="/img/main_img/404.png" alt="404"></div>
 
 <br>
 

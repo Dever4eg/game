@@ -11,7 +11,7 @@ body {
     margin-right: auto;
     max-width: 540px;
 
-    background: url(/resources/img/bg/bg.png) #9ea0a0;
+    background: url(/img/bg/bg.png) #9ea0a0;
     background-attachment: fixed;
 }
 

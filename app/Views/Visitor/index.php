@@ -1,7 +1,7 @@
 <br/>
 
 <div class="main_img center">
-    <img src="/resources/img/main_img/start.png" alt="main_img">
+    <img src="/img/main_img/start.png" alt="main_img">
 </div>
 
 <br/>

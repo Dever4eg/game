@@ -1,6 +1,6 @@
 <br>
 <div class="main_img center">
-    <img class="shadow" src="/resources/img/main_img/meta3.png" alt="main_img">
+    <img class="shadow" src="/img/main_img/meta3.png" alt="main_img">
 </div>
 <br>
 <p>Ну от хорошее место. Оно немного заросло, наломай веток и построй первое убежище... </h2></p>

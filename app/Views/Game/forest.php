@@ -5,7 +5,7 @@
     <br>
 </a>
 
-<div class="main_img"><img class="shadow" src="/resources/img/trees/spruce.png" alt="main_img"></div>
+<div class="main_img"><img class="shadow" src="/img/trees/spruce.png" alt="main_img"></div>
 <br>
 
 <div class="center">

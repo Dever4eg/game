@@ -1,5 +1,5 @@
 <br/>
-<div class="main_img center"><img class="shadow" src="/resources/img/main_img/login.png" alt="main_img"></div>
+<div class="main_img center"><img class="shadow" src="/img/main_img/login.png" alt="main_img"></div>
 <br/>
 <h2 class="center"> Вход </h2>
 <br/>

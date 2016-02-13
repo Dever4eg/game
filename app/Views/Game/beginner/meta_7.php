@@ -1,5 +1,5 @@
 <br>
-<div class="main_img center"><img src="/resources/img/main_img/meta7.png" alt="main_img"></div><br>
+<div class="main_img center"><img src="/img/main_img/meta7.png" alt="main_img"></div><br>
 
 <p>
     Печь у тебя замечательная. Теперь тебе осталось, оборудовать склад для этого нужно 8 брёвен...

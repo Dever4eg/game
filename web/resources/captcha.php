@@ -12,7 +12,7 @@ for ($i = 0; $i < 6; $i++)
 session_start();
 $_SESSION['rand_code'] = $string;
 
-$dir = __DIR__ . "/fonts/";
+$dir = __DIR__ . "/../fonts/";
 
 $image = imagecreatetruecolor(160, 40);
 $black = imagecolorallocate($image, 0, 0, 0);

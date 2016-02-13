@@ -3,7 +3,7 @@
     <h3 class="center"><a class="know_base_a" href="/KnowBase">База знаний</a>->Опыт в игре</h3>
     <br>
 
-    <p>Опыт <img class="characteristic" src="/resources/img/characteristic/XP_orb_animation.gif" alt=""> - числовое
+    <p>Опыт <img class="characteristic" src="/img/characteristic/XP_orb_animation.gif" alt=""> - числовое
         значение, набирается когда вы на охоте, в боях, рубите деревья, копаете в шахте, работаете на ферме и т. д.
         Вобщем за любое действие когда тратите свою энергию. А также когда вы в походе, или когда выполнили задание.
     </p>

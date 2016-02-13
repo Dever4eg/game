@@ -2,11 +2,11 @@
     <br>
     <h3 class="center"><a class="know_base_a" href="/KnowBase">База знаний</a>->Основные знания</h3>
     <br>
-    <p> 1. Всегда на виду твое имя <img src="/resources/img/header_img/steave.png" alt="">,
-        уровень <img src="/resources/img/header_img/level.png" alt="">
-        , энергия <img src="/resources/img/header_img/energy.png" alt="">,
-        здоровье <img src="/resources/img/header_img/heart.png" alt="">,
-        кредиты <img src="/resources/img/header_img/credit.png" alt="">.
+    <p> 1. Всегда на виду твое имя <img src="/img/header_img/steave.png" alt="">,
+        уровень <img src="/img/header_img/level.png" alt="">
+        , энергия <img src="/img/header_img/energy.png" alt="">,
+        здоровье <img src="/img/header_img/heart.png" alt="">,
+        кредиты <img src="/img/header_img/credit.png" alt="">.
         Осознай это.
         (Верхние иконки сразу под логотипом)</p>
     <p> 2. У тебя на складе уже есть каменный топор. Нарубите брёвен и сделайте себе деревянную кирку для похода в

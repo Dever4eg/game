@@ -1,5 +1,5 @@
 <br>
-<div class="main_img center"><img src="/resources/img/main_img/meta6.png" alt="main_img"></div><br>
+<div class="main_img center"><img src="/img/main_img/meta6.png" alt="main_img"></div><br>
 <p> Верстак готов. Теперь возми 8 камней и выложи из них печь.
     Она необходима для приготовления пищи и выплавки руд, которых ты будешь добывать в шахте. </p><br/>
 <br>

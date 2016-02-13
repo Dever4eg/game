@@ -1,15 +1,15 @@
 <?php
 
 
-namespace Dever4eg\Classes;
+namespace Dever4eg\Framework;
 
-use Dever4eg\Classes\Mvc\Router;
+use Dever4eg\Framework\Mvc\Router;
 
 class App
 {
     protected $route;
 
-    public function Run()
+    public static function Run()
     {
         require_once __DIR__ .'/../autoload.php';
 

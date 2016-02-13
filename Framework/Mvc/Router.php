@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Dever4eg\Classes\Mvc;
+namespace Dever4eg\Framework\Mvc;
 
-use Dever4eg\Classes\BException;
-use Dever4eg\Controllers\Error;
-use Dever4eg\Classes\http\E404Exception;
+use Dever4eg\Framework\BException;
+use Dever4eg\App\Controllers\Error;
+use Dever4eg\Framework\http\E404Exception;
 
 class Router
 {
@@ -27,8 +27,8 @@ class Router
 
                 //Если существует контроллер ошибок и метод ошибки 404,
                 //вызываем иначе просто выведем сообщение
-                if (class_exists('Dever4eg\Controllers\Error') &&
-                    method_exists('Dever4eg\Controllers\Error', 'ActionE404')
+                if (class_exists('Dever4eg\App\Controllers\Error') &&
+                    method_exists('Dever4eg\App\Controllers\Error', 'ActionE404')
                 ) {
                     /*
                      * TODO: Не отлавливется брошенное из view исключение
@@ -62,7 +62,7 @@ class Router
         //ld($ctrl);
         //ld($Action);
 
-        $ctrlName = 'Dever4eg\\Controllers\\' . $ctrl;
+        $ctrlName = 'Dever4eg\\App\\Controllers\\' . $ctrl;
         $methodName = 'Action' . $Action;
 
 

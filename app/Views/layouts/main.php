@@ -1,5 +1,5 @@
 <?php
-use Dever4eg\Classes\Auth;
+use Dever4eg\Framework\Auth;
 
 ?>
 <!DOCTYPE html>

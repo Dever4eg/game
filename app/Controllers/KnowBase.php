@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Dever4eg\Controllers;
+namespace Dever4eg\App\Controllers;
 
-use Dever4eg\Classes\Mvc\Controller;
-use Dever4eg\Classes\Mvc\View;
+use Dever4eg\Framework\Mvc\Controller;
+use Dever4eg\Framework\Mvc\View;
 
 class KnowBase extends Controller
 {

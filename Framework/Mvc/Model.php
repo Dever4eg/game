@@ -1,8 +1,8 @@
 <?php
 
-namespace Dever4eg\Classes\Mvc;
+namespace Dever4eg\Framework\Mvc;
 
-use Dever4eg\Classes\DB;
+use Dever4eg\Framework\DB;
 
 class Model
 {

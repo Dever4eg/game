@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Dever4eg\Models;
+namespace Dever4eg\App\Models;
 
 
-use Dever4eg\Classes\Mvc\Model;
-use Dever4eg\Classes\Auth;
+use Dever4eg\Framework\Mvc\Model;
+use Dever4eg\Framework\Auth;
 
 
 class Forest extends Model

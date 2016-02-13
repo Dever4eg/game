@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Dever4eg\Classes;
+namespace Dever4eg\Framework;
 
 
 class Session

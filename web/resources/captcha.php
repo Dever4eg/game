@@ -1,6 +1,6 @@
 <?php
 
-//use Dever4eg\Classes\Session;
+//use Dever4eg\Framework\Session;
 
 $string = "";
 for ($i = 0; $i < 6; $i++)

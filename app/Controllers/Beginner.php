@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Dever4eg\Controllers;
+namespace Dever4eg\App\Controllers;
 
-use Dever4eg\Classes\Mvc\Controller;
-use Dever4eg\Classes\Auth;
-use Dever4eg\Models\State;
-use Dever4eg\Classes\Mvc\View;
-use Dever4eg\Classes\Notification;
-use Dever4eg\Models\Stats;
+use Dever4eg\Framework\Mvc\Controller;
+use Dever4eg\Framework\Auth;
+use Dever4eg\App\Models\State;
+use Dever4eg\Framework\Mvc\View;
+use Dever4eg\Framework\Notification;
+use Dever4eg\App\Models\Stats;
 
 class Beginner extends Controller
 {

@@ -2,7 +2,6 @@
 
 error_reporting(E_ALL);
 
-require_once __DIR__ . '/../Classes/App.php';
+require_once __DIR__ . '/../Framework/App.php';
 
-$app = new Dever4eg\Classes\App();
-$app->Run();
+Dever4eg\Framework\App::Run();

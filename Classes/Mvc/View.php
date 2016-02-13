@@ -27,16 +27,16 @@ class View
 
         ob_start();
 
-        if( !file_exists(__DIR__ . '/../../views/' . $template . '.php') )
+        if( !file_exists(__DIR__ . '/../../App/Views/' . $template . '.php') )
             throw new E404Exception();
-        require __DIR__ . '/../../views/' . $template . '.php';
+        require __DIR__ . '/../../App/Views/' . $template . '.php';
 
         $content = ob_get_clean();
 
         if( !empty($layout) )
         {
             ob_start();
-            require __DIR__ . '/../../Views/layouts/' . $layout;
+            require __DIR__ . '/../../App/Views/layouts/' . $layout;
             $content = ob_get_clean();
         }
 

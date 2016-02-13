@@ -7,15 +7,21 @@ use Dever4eg\Classes\Mvc\Router;
 
 class App
 {
-    static function Run()
+    protected $route;
+
+    public function Run()
     {
+        require_once __DIR__ .'/../autoload.php';
+
         try
         {
-            Router::Start();
+            $router = new Router();
+            $router->Start();
         }
         catch(\Exception $e)
         {
-            //Здесь будет логирование
+            //TODO: критическое логирование
+            ld($e);
             die('Критическое исключение');
         }
     }

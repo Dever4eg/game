@@ -42,7 +42,7 @@ class KnowBase extends Controller
 
     public function ActionExperience()
     {
-        $levels = require __DIR__ .'/../Config/game/Levels.php';
+        $levels = require __DIR__ . '/../Config/game/Levels.php';
         $this->view->levels = $levels;
         $this->view->display('KnowBase/experience');
     }

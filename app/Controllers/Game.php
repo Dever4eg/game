@@ -43,7 +43,7 @@ class Game extends Controller
 
         $state = State::FindByColumn('login', Auth::GetLogin());
 
-        //баг не работает logout если мы еще beginner !!!
+        //TODO: баг не работает logout если мы еще beginner !!!
 
         if ($state->state == 'beginner') {
             header('location: /beginner');

@@ -11,7 +11,7 @@ class Notification
 {
     protected static function GetConfig()
     {
-        return require __DIR__ . '/../Config/Notif.php';
+        return require __DIR__ . '/../app/Config/Notif.php';
     }
 
     public static function Get()

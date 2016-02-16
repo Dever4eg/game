@@ -13,8 +13,7 @@ class Stats extends Model
     public $login;
     public $level = 1;
     public $energy = 1200;
-    public $health = 10;
+    public $health = 20;
     public $credits = 0;
-    public $lapis = 0;
     public $emerald = 0;
 }

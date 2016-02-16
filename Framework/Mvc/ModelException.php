@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Dever4eg\Framework\Mvc;
+namespace Dever4eg\framework\Mvc;
 
 
 class ModelException extends \Exception

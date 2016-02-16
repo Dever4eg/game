@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Dever4eg\Framework\Mvc;
+namespace Dever4eg\framework\Mvc;
 
-use Dever4eg\Framework\BException;
+use Dever4eg\framework\BException;
 use Dever4eg\App\Controllers\Error;
-use Dever4eg\Framework\http\E404Exception;
+use Dever4eg\framework\http\E404Exception;
 
 class Router
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dever4eg\Framework;
+namespace Dever4eg\framework;
 
 trait Singleton
 {

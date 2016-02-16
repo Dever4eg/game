@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Dever4eg\Framework;
+namespace Dever4eg\framework;
 
 
-use Dever4eg\Framework\Session;
+use Dever4eg\framework\Session;
 
 
 class Notification
